@@ -34,7 +34,7 @@ describe("total supply", function () {
     it("Should mint the right supply", async function () {
         const { bid_token, owner, account1 } = await loadFixture(deployBidToken);
   
-        expect(await bid_token.totalSupply()).to.eq(ethers.parseEther("1000000"));
+        expect(await bid_token.totalSupply()).to.eq(ethers.utils.parseEther("1000000"));
     });
 });
 });
